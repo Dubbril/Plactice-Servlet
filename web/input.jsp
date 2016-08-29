@@ -14,10 +14,13 @@
             body{
                 text-align: center;
             }
+            div{
+                color: green;
+            }
         </style>
     </head>
     <body>
-        <h1>ค้นหาสมาชิก</h1>
+        <div><h1>ค้นหาสมาชิก</h1></div>
         <form action="InputControl" method="post">
             หมายเลขสมาชิก : <input type="text" name="IdSearch" value="" /> <input type="submit" value="ค้นหา" />
         </form>

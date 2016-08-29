@@ -8,12 +8,14 @@ import java.sql.ResultSet;
 public class MemberTable {
 
     public static void main(String args[]) throws Exception {
-        Member m = new Member();
+        Member m ;
         m = findByid(0);
-        System.out.println("id : " + m.getId());
-        System.out.println("name : " + m.getName());
-        System.out.println("password : " + m.getPassword());
-        System.out.println("email : " + m.getEmail());
+        if (m != null) {
+            System.out.println("id : " + m.getId());
+            System.out.println("name : " + m.getName());
+            System.out.println("password : " + m.getPassword());
+            System.out.println("email : " + m.getEmail());
+        }
 
     }
 
